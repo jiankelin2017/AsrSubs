@@ -1,0 +1,12 @@
+{
+ "schema": 1,
+ "root": "D:\\AsrSubs",
+ "engine": "D:\\AsrSubs\\engine",
+ "runtime": "D:\\AsrSubs\\runtime",
+ "models": "D:\\AsrSubs\\models",
+ "data": "D:\\AsrSubs\\data",
+ "output": "D:\\AsrSubs\\data\\output",
+ "logs": "D:\\AsrSubs\\data\\logs",
+ "cache": "D:\\AsrSubs\\data\\cache",
+ "docs": "D:\\AsrSubs\\docs"
+}
