@@ -72,18 +72,15 @@ D:\插件\AsrSubs_整合_20261031\
 │   ├─ INDEX.md  CHANGELOG.md  _TEMPLATE.md
 │   ├─ design\  guides\  reference\  adr\     Active 文档 21 篇
 │   └─ archive\                 8 件已废弃原件（含 2 张 PNG），见 INDEX.md 第二节
-├─ 04_安装包\                v1.2.1 成品 + 上一版 v1.2.0 + README_说明.txt（5 个旧包已彻底删除）
+├─ 04_安装包\                v1.2.1 成品 + 上一版 v1.2.0 + README_说明.txt
 ├─ README.md                 本文件
 ├─ NOTICE.md                 致谢与技术来源（第 5 / 6 / 7 批修订）
 ├─ sync_dev.py               开发目录同步 / 巡检工具
 ├─ check_docs.py             文档防腐化巡检（只读，默认零外部命令）
-├─ _改前备份_部署v1.2.0_20261105\   部署前备份：77 个源码文件 + 2 份旧 lua + engine_改前\（6 文件）
-├─ _改前备份_修render预设_20261106\  _改前备份_修作业校验_20261106\
-├─ _改前备份_修listFiles_20261106\   _改前备份_修页面还原_20261106\   四次修复的改前 4 份 Lua
-└─ _旧构建_1.2.0_20261106\         1.2.0 的 dist 构建目录（改名挪出，未删除）
+└─ _旧构建_1.2.0_20261106\         1.2.0 的 dist 构建目录
 ```
 
-> 顶层固定四个编号目录，编号即顺序。`99_归档\` 已在 2026-10-31 移出本包，完整副本在 `D:\AsrSubs_整合_删除前备份_20261031\99_归档\`；本包内**不再有**该目录，旧 README 里指向它的相对路径均不可直接使用。
+
 
 ## 常用命令（可执行）
 
@@ -136,14 +133,3 @@ py -3.12 sync_dev.py --sync
 
 完整清单见 `03_文档\reference\reference-limitations.md`（含 v1.2.0 待真机验证三项）。高频几条：安装包本体约 12 MB，运行环境与模型装完在线下载（3.4~6 GB），断网机器须先备好 `engine` + `models`；跨窗上下文 `CTX_CHARS = 0`；撤销仅一级；粗剪重建的片段不带转场 / Fusion 特效 / 调色节点。
 
-## 失效内容说明
-
-| 旧内容 | 判定 | 现在看哪里 |
-|---|---|---|
-| 旧 README §0「版本现状（v4.8.18）」及其中「收敛到 v4.8.15」 | **已废弃**：与 `version.txt` = 1.2.0 冲突，逐版本叙事已移出 | `03_文档\CHANGELOG.md` |
-| `03_文档\archive\archive-readme-merged-20261101.md`（原名见 `03_文档\archive\README.md`）全篇 v4.8.18 | **已废弃并归档（2026-11-05）**：引用的 `AsrSubs_v4.8.18_安装器.exe` 不存在 | 发布流程已迁入 `03_文档\guides\guide-release.md` |
-| `03_文档\archive\archive-carryover-20261031.md`、`archive-version-diff-20261031.md` | **已废弃并归档（2026-11-05）**：前者自标过期，后者对比对象 `lua_src\` 全仓已不存在 | `03_文档\archive\README.md` |
-| `03_文档\archive\archive-dev-doc-20261105.md`（原 `开发文档.md`） | **整篇内容已拆分并归档（2026-11-05）**：头部 v4.8.18 过期，有效内容已按主题迁入 design / reference / guides / adr | `03_文档\INDEX.md` 第一节 |
-| `04_安装包\README_说明.txt` 的 v1.1.3 版本段 | **已增量更新**：v1.2.0 成品已出，头部已改为 1.2.0 并补 MD5 | `04_安装包\README_说明.txt` |
-| 同上文件里 v4.8.23 的安装步骤与旧目录名（误写为「历史」，实为 `_历史\`） | **已修正**：当前文件名是 `AsrSubs_v1.2.1_安装器.exe`；4.8.x 逐版段已标为史料、不再作为结论 | `03_文档\guides\guide-install.md`、`reference\reference-release-notes.md` |
-| 旧 README §7 回滚条目里的 `删除前备份\99_归档\...` 相对路径 | **路径已移出本包**，须换成绝对路径 | 见上方目录说明 |
